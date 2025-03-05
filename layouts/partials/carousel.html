@@ -4,7 +4,7 @@
         <a href="{{ .Permalink }}">
             <div class="card-header">
                 {{ if .Params.logo }}
-                <img src="{{ .Params.logo }}" class="logo-container" alt="Logo de {{ .Title }}">
+                <img src="{{ .Params.logo | relURL }}" class="logo-container" alt="Logo de {{ .Title }}">
                 {{ end }}
                 <h4>{{ .Title }}</h4>
             </div>

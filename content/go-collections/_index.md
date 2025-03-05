@@ -1,6 +1,6 @@
 ---
 github: "https://github.com/tu-usuario/tu-repositorio"
-logo: "/logos/avatar.png"
+logo: "images/avatar_go_collections.png"
 title: "Go Collections"
 type: docs
 forkme_url: https://github.com/jose78/go-collections.git
