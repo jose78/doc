@@ -7,5 +7,6 @@ theme = "docdock"
   themeVariant = "gray"
   forkme_enable = true
   themeStyle = "original"
+  
 [outputs]
   home = ["HTML", "RSS", "JSON"]
