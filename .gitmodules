@@ -1,3 +1,3 @@
-[submodule "nqh-hugo"]
-	path = themes/nqh
-	url = https://github.com/saadjsct/npqhugo.git
+[submodule "themes/docdock"]
+	path = themes/docdock
+	url = https://github.com/vjeantet/hugo-theme-docdock
