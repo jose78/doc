@@ -38,7 +38,7 @@ jobs:
       - name: Build site
         run: hugo --minify 
       - name: Build site
-        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+        run: hugo --minify --baseURL "doc"
   
       - name: Prepare publication
         run: mv ./public ./docs
