@@ -1,0 +1,12 @@
+.code-block {
+  position: relative;
+}
+
+.code-title {
+  position: absolute;
+  top: -1.5em; /* Ajusta la posición vertical */
+  left: 1em; /* Ajusta la posición horizontal */
+  background-color: #f0f0f0; /* Ajusta el color de fondo */
+  padding: 0.2em 0.5em; /* Ajusta el relleno */
+  border-radius: 5px; /* Ajusta el radio de borde */
+}
