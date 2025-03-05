@@ -1,14 +1,8 @@
+
 <div class="code-block">
-  {{ if .Get "title" }}
-  <div class="code-title">
-    {{ .Get "title" }}
-    {{ if .Get "link" }}
-    <a href="{{ .Get "link" }}" target="_blank">🔗 Go Playground</a>
+    {{ with .Get "title" }}
+    <div class="code-title">{{ . }}</div>
     {{ end }}
-  </div>
-  {{ end }}
-  <div class="code-container">
-    <button class="copy-button" onclick="copyToClipboard(this)">Copy</button>
-    <pre><code class="{{ .Get "language" }}">{{ .Inner | safeHTML }}</code></pre>
-  </div>
+    {{ .Inner }}
 </div>
+<link rel="stylesheet" href="{{ "css/code_block.css" | relURL }}">

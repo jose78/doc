@@ -1,0 +1,8 @@
+{{ if .Params.forkme_url }}
+<div class="fork-me-page">
+  <a href="{{ .Params.forkme_url }}" target="_blank" rel="noopener noreferrer">
+    <img  src="{{ "images/fork_me.png" | relURL }}?resize=149%2C149" alt="Fork me on GitHub">
+  </a>
+</div>
+<link rel="stylesheet" href="{{ "css/fork_me.css" | relURL }}">
+{{ end }}

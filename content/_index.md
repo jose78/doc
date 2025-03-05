@@ -1,7 +1,6 @@
 ---
-title: "Welcome to My Site"
-description: "This is the homepage"
+title: "HOME"
+type: docs
+weight: 0
+disableNavChevron: true
 ---
-# Welcome to My Site
-
-This is the content of the homepage.

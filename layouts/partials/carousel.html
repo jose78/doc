@@ -1,0 +1,24 @@
+<div class="carousel">
+    {{ range .Sections }}
+    <div class="carousel-card">
+        <a href="{{ .Permalink }}">
+            <div class="card-header">
+                {{ if .Params.logo }}
+                <img src="{{ .Params.logo }}" class="logo-container" alt="Logo de {{ .Title }}">
+                {{ end }}
+                <h4>{{ .Title }}</h4>
+            </div>
+            <hr>
+            <p>{{ .Params.description | truncate 100 }}</p>
+        </a>
+    </div>
+    {{ end }}
+</div>
+
+<script src="{{ "js/carousel.js" | relURL }}"></script>
+
+<div class="carousel-indicators">
+    {{ range $index, $element := .Sections }}
+    <button class="indicator" data-index="{{ $index }}"></button>
+    {{ end }}
+  </div>
