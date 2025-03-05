@@ -18,6 +18,9 @@ jobs:
         with:
           hugo-version: 'latest' # O especifica una versión
 
+      - name: Install theme
+        run: git submodule add https://github.com/vjeantet/hugo-theme-docdock themes/docdock
+        
       - name: Build site
         run: hugo --minify 
 
