@@ -19,9 +19,7 @@ jobs:
           hugo-version: 'latest' # O especifica una versión
 
       - name: Build site
-        run: hugo \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+        run: hugo --minify 
 
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v3
