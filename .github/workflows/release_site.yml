@@ -16,7 +16,8 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest' # O especifica una versión
+          hugo-version: '0.121.2'
+          extended: true
 
       - name: Install theme
         run: git submodule add https://github.com/vjeantet/hugo-theme-docdock themes/docdock
